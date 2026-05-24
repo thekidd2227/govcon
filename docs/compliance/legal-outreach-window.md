@@ -18,7 +18,6 @@ Help ARCG build federal familiarity without creating procurement-integrity, unfa
 Safe outreach is capability-oriented and not tied to influencing an active solicitation.
 
 Examples:
-
 - introduce ARCG capability
 - ask for correct vendor-day or small-business-office process
 - respond to RFI/Sources Sought through official channel
@@ -28,7 +27,6 @@ Examples:
 ## Blocked outreach
 
 Do not ask for:
-
 - source-selection information
 - incumbent pricing
 - nonpublic evaluation preferences
@@ -38,4 +36,4 @@ Do not ask for:
 
 ## Rule
 
-When an active solicitation is released, use only the listed POC, official Q&A, amendment process, or solicitation instructions.
+When active solicitation is released, use only the listed POC, official Q&A, amendment process, or solicitation instructions.

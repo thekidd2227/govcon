@@ -7,7 +7,6 @@ Your task is to inspect the actual current repo and recommend the next improveme
 Do not assume files exist. Inspect first.
 
 Focus areas:
-
 - services/govcon/*
 - services/ai/*
 - api/index.js
@@ -20,11 +19,9 @@ Focus areas:
 - README.md
 
 Primary business goal:
-
 Help Charlie land federal micro-purchases, simplified acquisition opportunities, and small contracts under a conservative $250K ceiling using any NAICS, subcontractor-supported execution, and legal relationship-building with CORs/program offices when the outreach window is safe.
 
 Core rules:
-
 - SourceDeck app code stays in sourcedeck-app.
 - GOVCON repo is only record/doctrine/spec/prompt layer.
 - Deterministic gates come before Watsonx or any AI reasoning.
@@ -36,7 +33,6 @@ Core rules:
 - LOW/UNKNOWN confidence cannot become verified fact.
 
 Inspect and report:
-
 1. What GovCon/Fed Agent modules are present.
 2. What was implemented correctly.
 3. What is missing or duplicated.
