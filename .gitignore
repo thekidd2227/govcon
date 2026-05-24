@@ -1,0 +1,19 @@
+# Node / build artifacts under sites/*
+sites/**/node_modules/
+sites/**/.next/
+sites/**/.turbo/
+sites/**/out/
+sites/**/dist/
+sites/**/.vercel/
+sites/**/.env*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log

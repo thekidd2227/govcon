@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-arcg-navy: #0B1F33;
+  --color-arcg-steel: #1F6F8B;
+  --color-arcg-river: #1FA6C9;
+  --color-arcg-ivory: #F7F5EF;
+  --color-arcg-graphite: #2B2F33;
+  --color-arcg-gold: #C9A227;
+  --color-arcg-red: #B4232A;
+
+  --color-arcg-ink: #2B2F33;
+  --color-arcg-ink-muted: #5A6068;
+
+  --font-display: var(--font-fraunces), "GT Sectra", Georgia, serif;
+  --font-sans: var(--font-inter), -apple-system, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  --container-content: 1200px;
+}
+
+:root {
+  --arcg-line: rgba(11, 31, 51, 0.08);
+  --arcg-line-strong: rgba(11, 31, 51, 0.18);
+  --arcg-red-soft: rgba(180, 35, 42, 0.10);
+}
+
+html, body {
+  background: var(--color-arcg-ivory);
+  color: var(--color-arcg-graphite);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-arcg-navy);
+  color: var(--color-arcg-ivory);
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-arcg-ink-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: var(--color-arcg-red);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--color-arcg-navy);
+}
+
+.hairline {
+  height: 1px;
+  background: var(--arcg-line);
+}
+.hairline-strong {
+  height: 1px;
+  background: var(--arcg-line-strong);
+}
+.hairline-gold {
+  height: 1px;
+  background: var(--color-arcg-gold);
+  width: 64px;
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--color-arcg-river);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
