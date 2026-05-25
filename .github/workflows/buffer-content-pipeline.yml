@@ -1,0 +1,273 @@
+# Migrated from ARCGSystems. Manual-only until GOVCON secrets and dry-run validation are confirmed.
+name: Buffer Content Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Pipeline mode
+        required: true
+        default: dry_run
+        type: choice
+        options:
+          - generate_only
+          - validate_export
+          - list_orgs
+          - list_channels
+          - dry_run
+          - schedule
+          - media_plan
+          - generate_media_dry_run
+          - generate_media
+          - validate_assets
+          - dry_run_with_media
+          - schedule_with_media
+      month:
+        description: Month to target, YYYY-MM or next
+        required: false
+        default: next
+      platform:
+        description: Platform filter
+        required: false
+        default: all
+        type: choice
+        options:
+          - all
+          - linkedin
+          - instagram
+          - facebook
+      product:
+        description: Product filter
+        required: false
+        default: all
+        type: choice
+        options:
+          - all
+          - arcg
+          - sourcedeck
+          - chartnav
+          - rezy
+      limit:
+        description: Optional post limit
+        required: false
+        default: ""
+      include_draft:
+        description: Include draft posts
+        required: false
+        type: boolean
+        default: false
+      asset_type:
+        description: Asset type filter for media steps
+        required: false
+        default: all
+        type: choice
+        options:
+          - all
+          - image
+          - carousel
+          - video
+      require_media:
+        description: Require Buffer-ready media before scheduling
+        required: false
+        type: boolean
+        default: false
+      execute_confirm:
+        description: Type SCHEDULE_TO_BUFFER (schedule) or GENERATE_MEDIA (live media generation)
+        required: false
+        default: ""
+
+jobs:
+  buffer-content:
+    runs-on: ubuntu-latest
+    env:
+      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      BUFFER_ORGANIZATION_ID: ${{ secrets.BUFFER_ORGANIZATION_ID }}
+      BUFFER_CHANNEL_LINKEDIN: ${{ secrets.BUFFER_CHANNEL_LINKEDIN }}
+      BUFFER_CHANNEL_INSTAGRAM: ${{ secrets.BUFFER_CHANNEL_INSTAGRAM }}
+      BUFFER_CHANNEL_FACEBOOK: ${{ secrets.BUFFER_CHANNEL_FACEBOOK }}
+      BUFFER_TIMEZONE: America/New_York
+      BUFFER_SCHEDULE_MODE: schedule
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL || 'gpt-image-2' }}
+      OPENAI_IMAGE_QUALITY: ${{ vars.OPENAI_IMAGE_QUALITY || 'high' }}
+      OPENAI_IMAGE_FORMAT: ${{ vars.OPENAI_IMAGE_FORMAT || 'png' }}
+      MEDIA_PROVIDER: openai
+      MEDIA_OUTPUT_DIR: .generated-media
+      MEDIA_REQUIRE_HOOK_SPECIFIC: "true"
+      MEDIA_MIN_RELEVANCE_SCORE: "85"
+      ASSET_STORAGE_PROVIDER: ${{ vars.ASSET_STORAGE_PROVIDER || 'local_dry_run' }}
+      CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+      CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+      CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+      BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generate only
+        if: ${{ inputs.mode == 'generate_only' }}
+        run: |
+          npm run content:generate:month -- --month "${{ inputs.month }}"
+          npm run content:validate
+
+      - name: Validate and export
+        if: ${{ inputs.mode == 'validate_export' }}
+        run: |
+          npm run content:validate
+          npm run content:export
+
+      - name: List Buffer organizations
+        if: ${{ inputs.mode == 'list_orgs' }}
+        run: npm run buffer:orgs
+
+      - name: List Buffer channels
+        if: ${{ inputs.mode == 'list_channels' }}
+        run: npm run buffer:channels
+
+      - name: Dry-run Buffer schedule
+        if: ${{ inputs.mode == 'dry_run' }}
+        run: |
+          ARGS=(--dry-run)
+          if [ "${{ inputs.month }}" != "next" ]; then ARGS+=(--month "${{ inputs.month }}"); fi
+          if [ "${{ inputs.platform }}" != "all" ]; then ARGS+=(--platform "${{ inputs.platform }}"); fi
+          if [ "${{ inputs.product }}" != "all" ]; then ARGS+=(--product "${{ inputs.product }}"); fi
+          if [ -n "${{ inputs.limit }}" ]; then ARGS+=(--limit "${{ inputs.limit }}"); fi
+          if [ "${{ inputs.include_draft }}" = "true" ]; then ARGS+=(--include-draft); fi
+          node scripts/buffer-schedule-calendar.mjs "${ARGS[@]}"
+
+      - name: Require live scheduling confirmation
+        if: ${{ inputs.mode == 'schedule' && inputs.execute_confirm != 'SCHEDULE_TO_BUFFER' }}
+        run: |
+          echo "Live scheduling requires execute_confirm=SCHEDULE_TO_BUFFER."
+          exit 1
+
+      - name: Execute Buffer schedule
+        if: ${{ inputs.mode == 'schedule' && inputs.execute_confirm == 'SCHEDULE_TO_BUFFER' }}
+        run: |
+          ARGS=(--execute)
+          if [ "${{ inputs.month }}" != "next" ]; then ARGS+=(--month "${{ inputs.month }}"); fi
+          if [ "${{ inputs.platform }}" != "all" ]; then ARGS+=(--platform "${{ inputs.platform }}"); fi
+          if [ "${{ inputs.product }}" != "all" ]; then ARGS+=(--product "${{ inputs.product }}"); fi
+          if [ -n "${{ inputs.limit }}" ]; then ARGS+=(--limit "${{ inputs.limit }}"); fi
+          if [ "${{ inputs.include_draft }}" = "true" ]; then ARGS+=(--include-draft); fi
+          node scripts/buffer-schedule-calendar.mjs "${ARGS[@]}"
+
+      # ── Media pipeline ──────────────────────────────────────────────────
+      - name: Media plan
+        if: ${{ inputs.mode == 'media_plan' }}
+        run: npm run media:plan
+
+      - name: Upload media plan artifact
+        if: ${{ inputs.mode == 'media_plan' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: media-plan-${{ github.run_id }}
+          path: |
+            exports/media-plan.json
+            exports/media-plan.csv
+          if-no-files-found: error
+
+      - name: Generate media (dry-run)
+        if: ${{ inputs.mode == 'generate_media_dry_run' }}
+        run: |
+          ARGS=(--dry-run)
+          if [ "${{ inputs.month }}" != "next" ]; then ARGS+=(--month "${{ inputs.month }}"); fi
+          if [ "${{ inputs.platform }}" != "all" ]; then ARGS+=(--platform "${{ inputs.platform }}"); fi
+          if [ "${{ inputs.product }}" != "all" ]; then ARGS+=(--product "${{ inputs.product }}"); fi
+          if [ -n "${{ inputs.limit }}" ]; then ARGS+=(--limit "${{ inputs.limit }}"); fi
+          if [ "${{ inputs.asset_type }}" != "all" ]; then ARGS+=(--asset-type "${{ inputs.asset_type }}"); fi
+          node scripts/generate-media-assets.mjs "${ARGS[@]}"
+
+      - name: Upload media dry-run artifact
+        if: ${{ inputs.mode == 'generate_media_dry_run' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: media-dry-run-${{ github.run_id }}
+          path: |
+            exports/media-plan.json
+            exports/media-plan.csv
+          if-no-files-found: ignore
+
+      - name: Require live media confirmation
+        if: ${{ inputs.mode == 'generate_media' && inputs.execute_confirm != 'GENERATE_MEDIA' }}
+        run: |
+          echo "Live media generation requires execute_confirm=GENERATE_MEDIA."
+          exit 1
+
+      - name: Generate media (live)
+        if: ${{ inputs.mode == 'generate_media' && inputs.execute_confirm == 'GENERATE_MEDIA' }}
+        env:
+          MEDIA_GENERATION_MODE: live
+        run: |
+          ARGS=(--execute)
+          if [ "${{ inputs.month }}" != "next" ]; then ARGS+=(--month "${{ inputs.month }}"); fi
+          if [ "${{ inputs.platform }}" != "all" ]; then ARGS+=(--platform "${{ inputs.platform }}"); fi
+          if [ "${{ inputs.product }}" != "all" ]; then ARGS+=(--product "${{ inputs.product }}"); fi
+          if [ -n "${{ inputs.limit }}" ]; then ARGS+=(--limit "${{ inputs.limit }}"); fi
+          if [ "${{ inputs.asset_type }}" != "all" ]; then ARGS+=(--asset-type "${{ inputs.asset_type }}"); fi
+          node scripts/generate-media-assets.mjs "${ARGS[@]}"
+
+      - name: Upload generated media artifacts
+        if: ${{ inputs.mode == 'generate_media' && inputs.execute_confirm == 'GENERATE_MEDIA' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-media-${{ github.run_id }}
+          path: |
+            src/content/arcg/calendar.json
+            .generated-media/**
+            exports/media-plan.json
+            exports/media-plan.csv
+          if-no-files-found: ignore
+
+      - name: Validate generated assets
+        if: ${{ inputs.mode == 'validate_assets' }}
+        run: npm run media:validate
+
+      - name: Upload asset validation snapshot
+        if: ${{ inputs.mode == 'validate_assets' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: asset-validation-snapshot-${{ github.run_id }}
+          path: |
+            src/content/arcg/calendar.json
+            exports/media-plan.json
+            exports/media-plan.csv
+          if-no-files-found: ignore
+
+      - name: Dry-run Buffer schedule with media
+        if: ${{ inputs.mode == 'dry_run_with_media' }}
+        run: |
+          ARGS=(--dry-run)
+          if [ "${{ inputs.month }}" != "next" ]; then ARGS+=(--month "${{ inputs.month }}"); fi
+          if [ "${{ inputs.platform }}" != "all" ]; then ARGS+=(--platform "${{ inputs.platform }}"); fi
+          if [ "${{ inputs.product }}" != "all" ]; then ARGS+=(--product "${{ inputs.product }}"); fi
+          if [ -n "${{ inputs.limit }}" ]; then ARGS+=(--limit "${{ inputs.limit }}"); fi
+          if [ "${{ inputs.include_draft }}" = "true" ]; then ARGS+=(--include-draft); fi
+          if [ "${{ inputs.asset_type }}" != "all" ]; then ARGS+=(--asset-type "${{ inputs.asset_type }}"); fi
+          if [ "${{ inputs.require_media }}" = "true" ]; then ARGS+=(--require-media); else ARGS+=(--media-optional); fi
+          node scripts/buffer-schedule-calendar.mjs "${ARGS[@]}"
+
+      - name: Require live schedule_with_media confirmation
+        if: ${{ inputs.mode == 'schedule_with_media' && inputs.execute_confirm != 'SCHEDULE_TO_BUFFER' }}
+        run: |
+          echo "schedule_with_media requires execute_confirm=SCHEDULE_TO_BUFFER."
+          exit 1
+
+      - name: Execute Buffer schedule with media
+        if: ${{ inputs.mode == 'schedule_with_media' && inputs.execute_confirm == 'SCHEDULE_TO_BUFFER' }}
+        run: |
+          ARGS=(--execute)
+          if [ "${{ inputs.month }}" != "next" ]; then ARGS+=(--month "${{ inputs.month }}"); fi
+          if [ "${{ inputs.platform }}" != "all" ]; then ARGS+=(--platform "${{ inputs.platform }}"); fi
+          if [ "${{ inputs.product }}" != "all" ]; then ARGS+=(--product "${{ inputs.product }}"); fi
+          if [ -n "${{ inputs.limit }}" ]; then ARGS+=(--limit "${{ inputs.limit }}"); fi
+          if [ "${{ inputs.include_draft }}" = "true" ]; then ARGS+=(--include-draft); fi
+          if [ "${{ inputs.asset_type }}" != "all" ]; then ARGS+=(--asset-type "${{ inputs.asset_type }}"); fi
+          if [ "${{ inputs.require_media }}" = "true" ]; then ARGS+=(--require-media); else ARGS+=(--media-optional); fi
+          node scripts/buffer-schedule-calendar.mjs "${ARGS[@]}"
