@@ -55,7 +55,7 @@ export function FinalCta() {
             Download Capability Statement
           </CtaButton>
           <CtaButton href={`mailto:${COMPANY.email}`} variant="inverted">
-            Contact Jean Max-Charles
+            Contact ARCG
           </CtaButton>
         </div>
       </div>

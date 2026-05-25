@@ -16,8 +16,8 @@ export const COMPANY = {
   phone: "347.285.5750",
   phoneE164: "+13472855750",
   contact: {
-    name: "Mr. Jean Max-Charles",
-    title: "President & Sales Director",
+    name: "ARCG Systems",
+    title: "Contracting & Operations",
   },
   identifiers: {
     uei: "KPHJM83ZJLJ4",
