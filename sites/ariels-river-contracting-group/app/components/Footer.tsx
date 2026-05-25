@@ -68,7 +68,14 @@ export function Footer() {
             </dl>
           </div>
         </div>
-        <div className="mt-12 pt-6 border-t border-arcg-ivory/15 text-[12px] text-arcg-ivory/65 flex flex-col md:flex-row gap-2 md:justify-between">
+        <div className="mt-12 pt-6 border-t border-arcg-ivory/15 flex flex-wrap justify-center gap-3">
+          {["MBE", "SBE", "DBE", "SDVOSB", "HUBZone"].map((cert) => (
+            <span key={cert} className="font-mono text-[11px] font-semibold tracking-[0.12em] text-arcg-river px-3 py-1.5 rounded border border-arcg-ivory/20 bg-arcg-ivory/5">
+              {cert}
+            </span>
+          ))}
+        </div>
+        <div className="mt-6 pt-6 border-t border-arcg-ivory/15 text-[12px] text-arcg-ivory/65 flex flex-col md:flex-row gap-2 md:justify-between">
           <span className="inline-flex items-center gap-3">
             <span className="inline-block w-[5px] h-[5px] rounded-full bg-arcg-red" />
             © {new Date().getFullYear()} {COMPANY.legalName}. All rights reserved.
@@ -77,6 +84,10 @@ export function Footer() {
             <span className="inline-block w-[5px] h-[5px] rounded-full bg-arcg-river" />
             {COMPANY.website} is the registered web domain of {COMPANY.legalName}.
           </span>
+          <a href="https://arcgsystems.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 hover:text-arcg-river transition-colors">
+            <span className="inline-block w-[5px] h-[5px] rounded-full bg-arcg-red" />
+            Powered by ARCG Systems
+          </a>
         </div>
       </div>
     </footer>
