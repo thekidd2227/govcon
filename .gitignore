@@ -1,3 +1,8 @@
+# Root
+node_modules/
+.env.local
+.env*.local
+
 # Node / build artifacts under sites/*
 sites/**/node_modules/
 sites/**/.next/

@@ -1,0 +1,27 @@
+{
+  "name": "govcon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "content:validate": "node scripts/validate-content-calendar.mjs",
+    "content:export": "node scripts/export-content-calendar.mjs",
+    "content:build": "npm run content:validate && npm run content:export",
+    "content:generate:month": "node scripts/generate-monthly-content-calendar.mjs",
+    "content:generate:next": "node scripts/generate-monthly-content-calendar.mjs --month next",
+    "content:audit:linkedin": "node scripts/audit-linkedin-strategy.mjs",
+    "buffer:orgs": "node scripts/buffer-list-organizations.mjs",
+    "buffer:channels": "node scripts/buffer-list-channels.mjs",
+    "buffer:dry-run": "node scripts/buffer-dry-run.mjs",
+    "buffer:dry-run:media": "node scripts/buffer-schedule-calendar.mjs --dry-run --media-optional",
+    "buffer:classify:smoke": "node scripts/buffer-classify-smoke-test.mjs",
+    "buffer:schedule": "node scripts/buffer-schedule-calendar.mjs --execute",
+    "buffer:schedule:media": "node scripts/buffer-schedule-calendar.mjs --execute --media-optional",
+    "buffer:queue": "node scripts/buffer-check-queue.mjs",
+    "media:plan": "node scripts/generate-media-plan.mjs",
+    "media:generate:dry-run": "node scripts/generate-media-assets.mjs --dry-run",
+    "media:generate": "node scripts/generate-media-assets.mjs --execute",
+    "media:validate": "node scripts/media-validate-assets.mjs",
+    "sourcedeck:content-agent:audit": "node scripts/audit-sourcedeck-content-agent.mjs"
+  }
+}
