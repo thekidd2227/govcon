@@ -1,0 +1,260 @@
+[
+  {
+    "id": "pillar_fast_compliant_response",
+    "name": "Fast Compliant Response",
+    "description": "ARCG responds inside 24–72 hours with documentation, not promises. Reinforces ARCG's response posture and procurement-aware behavior.",
+    "target_avatars": ["federal_co", "state_local_pl", "prime_pm", "facilities_director"],
+    "service_lanes": ["pest_control", "translation", "staffing", "janitorial", "emergency"],
+    "buyer_stage": "trust",
+    "sample_angles": [
+      "Why a 72-hour response window is procurement-relevant",
+      "What a documented response SLA looks like in writing",
+      "How a responsive vendor saves a CO 20 minutes at year-end",
+      "What ARCG sends inside 24 hours after a capabilities call"
+    ],
+    "proof_signals": [
+      "Stated 24–72 hour response SLA",
+      "Single POC name and phone",
+      "Capability statement attached on first contact",
+      "Reps & certs current in SAM.gov"
+    ],
+    "blocked_claims": [
+      "guaranteed response",
+      "always available 24/7",
+      "fastest in the industry"
+    ],
+    "primary_cta_ids": ["cta_request_capabilities_call", "cta_download_capability_statement"]
+  },
+  {
+    "id": "pillar_certified_small_business_advantage",
+    "name": "Certified Small Business Advantage",
+    "description": "ARCG's stack of certifications — SDVOSB, MBE, SBE, DBE, HUBZone — used honestly to qualify for set-aside actions and subcontracting plan goals.",
+    "target_avatars": ["federal_co", "state_local_pl", "prime_pm"],
+    "service_lanes": ["pest_control", "translation", "staffing", "janitorial", "emergency"],
+    "buyer_stage": "awareness",
+    "sample_angles": [
+      "SDVOSB certified through SBA VetCert — what that means for procurement",
+      "Set-aside quotas: SDVOSB 3%, small business 23%, and how ARCG helps",
+      "MBE / DBE / SBE — when each one matters at the state and local level",
+      "How a multi-certified small business simplifies vendor compliance"
+    ],
+    "proof_signals": [
+      "SDVOSB certification reference",
+      "Jurisdiction-specific MBE / SBE / DBE references",
+      "HUBZone reference where applicable",
+      "SAM.gov UEI on capability statement"
+    ],
+    "blocked_claims": [
+      "self-certified veteran-owned",
+      "preferred vendor of [agency]",
+      "trusted by federal agencies"
+    ],
+    "primary_cta_ids": ["cta_download_capability_statement", "cta_request_capabilities_call"]
+  },
+  {
+    "id": "pillar_facility_readiness",
+    "name": "Facility Readiness",
+    "description": "Helping Facilities Directors and procurement leads keep buildings safe, clean, and occupant-ready. Operational, calm, problem-solving tone.",
+    "target_avatars": ["facilities_director", "state_local_pl"],
+    "service_lanes": ["janitorial", "pest_control", "staffing"],
+    "buyer_stage": "trust",
+    "sample_angles": [
+      "Pre-occupancy facility readiness checklist",
+      "How to scope a janitorial overflow contract",
+      "Vendor backup posture — what to ask before you need it",
+      "ADA-aware service delivery in public facilities"
+    ],
+    "proof_signals": [
+      "Eco-friendly / ADA-aware language",
+      "Photos of uniformed crew and equipment (no client identifiers)",
+      "Service-lane breakdown matching commodity codes"
+    ],
+    "blocked_claims": [
+      "deep-cleaned to hospital standard",
+      "100% pest-free guarantee",
+      "lowest price guaranteed"
+    ],
+    "primary_cta_ids": ["cta_request_facilities_quote", "cta_schedule_facilities_discussion"]
+  },
+  {
+    "id": "pillar_pest_control_and_safety",
+    "name": "Pest Control and Safety",
+    "description": "Pest control & extermination as ARCG's primary NAICS (561710). IPM posture, eco-friendly, occupant-safe, public-facility-appropriate.",
+    "target_avatars": ["facilities_director", "state_local_pl"],
+    "service_lanes": ["pest_control"],
+    "buyer_stage": "trust",
+    "sample_angles": [
+      "Integrated Pest Management 101 for public buildings",
+      "Why a pest sighting during occupancy is a procurement problem",
+      "Eco-friendly pest treatment in occupied spaces",
+      "Quarterly pest service vs. reactive call-outs"
+    ],
+    "proof_signals": [
+      "IPM language",
+      "Eco-friendly / occupant-safe language",
+      "State licensing handled directly or via verified licensed sub",
+      "NAICS 561710 reference"
+    ],
+    "blocked_claims": [
+      "100% pest-free guarantee",
+      "guaranteed extermination",
+      "chemical-free in all cases"
+    ],
+    "primary_cta_ids": ["cta_pest_control_support", "cta_request_facilities_quote"]
+  },
+  {
+    "id": "pillar_prime_subcontracting_support",
+    "name": "Prime Subcontracting Support",
+    "description": "ARCG as a teaming partner for primes who need a real, performing socioeconomic sub — not a pass-through. SDVOSB / MBE / DBE / SBE gap-fill.",
+    "target_avatars": ["prime_pm"],
+    "service_lanes": ["pest_control", "translation", "staffing", "janitorial", "emergency"],
+    "buyer_stage": "action",
+    "sample_angles": [
+      "Subcontracting plan goals — what your SBLO wants to see",
+      "What a clean teaming package looks like at proposal time",
+      "Socioeconomic gap-fills under SDVOSB without pass-through risk",
+      "Vendor documentation primes actually need before award"
+    ],
+    "proof_signals": [
+      "SDVOSB certification reference",
+      "Cert package ready in 24 hours",
+      "Insurance posture stated",
+      "Defined self-perform scope"
+    ],
+    "blocked_claims": [
+      "pass-through partner",
+      "we take a finder's fee",
+      "preferred sub of [prime]"
+    ],
+    "primary_cta_ids": ["cta_open_teaming_discussion", "cta_request_cert_package"]
+  },
+  {
+    "id": "pillar_micro_purchase_readiness",
+    "name": "Micro-Purchase Readiness",
+    "description": "Helping COs and purchase card holders use ARCG for under-$10K actions quickly and compliantly.",
+    "target_avatars": ["federal_co"],
+    "service_lanes": ["pest_control", "translation", "staffing", "janitorial", "emergency"],
+    "buyer_stage": "action",
+    "sample_angles": [
+      "Micro-purchase vendor readiness checklist",
+      "Why your purchase card holder needs a documented small business bench",
+      "How to add ARCG to your micro-purchase rotation",
+      "Year-end micro-purchases and 72-hour mobilization"
+    ],
+    "proof_signals": [
+      "SAM.gov UEI",
+      "Single POC and phone",
+      "Capability statement ready",
+      "Stated under-$10K response posture"
+    ],
+    "blocked_claims": [
+      "always lowest price",
+      "guaranteed micro-purchase award",
+      "approved vendor of every federal agency"
+    ],
+    "primary_cta_ids": ["cta_micro_purchase_readiness", "cta_download_capability_statement"]
+  },
+  {
+    "id": "pillar_simplified_acquisition_support",
+    "name": "Simplified Acquisition Support",
+    "description": "ARCG inside the Simplified Acquisition Threshold ($250K) — sole-source SDVOSB, set-aside, RFQ posture.",
+    "target_avatars": ["federal_co", "state_local_pl", "prime_pm"],
+    "service_lanes": ["pest_control", "translation", "staffing", "janitorial", "emergency"],
+    "buyer_stage": "action",
+    "sample_angles": [
+      "SDVOSB sole-source under the Simplified Acquisition Threshold",
+      "What a clean RFQ response looks like",
+      "Why under-$250K is its own discipline",
+      "Set-aside compliance without overengineering"
+    ],
+    "proof_signals": [
+      "SDVOSB certification reference",
+      "Capability statement aligned to NAICS",
+      "Reps & certs current",
+      "Stated under-$250K specialization"
+    ],
+    "blocked_claims": [
+      "guaranteed award",
+      "preferred vendor",
+      "exclusive provider"
+    ],
+    "primary_cta_ids": ["cta_request_capabilities_call", "cta_request_quote"]
+  },
+  {
+    "id": "pillar_emergency_response",
+    "name": "Emergency Response / Rapid Mobilization",
+    "description": "Standby posture for displacement, storm, building events. Mobilization without a 24/7 promise.",
+    "target_avatars": ["facilities_director", "state_local_pl"],
+    "service_lanes": ["emergency", "janitorial", "staffing", "translation"],
+    "buyer_stage": "trust",
+    "sample_angles": [
+      "Standby posture vs. 24/7 promise — what's actually deliverable",
+      "Post-event janitorial standup",
+      "Translation support during community displacement",
+      "Why an on-call vendor matters before storm season"
+    ],
+    "proof_signals": [
+      "Stated standby posture",
+      "Mobilization window per lane",
+      "Photos of equipment and crew posture",
+      "Insurance posture stated"
+    ],
+    "blocked_claims": [
+      "guaranteed mobilization in X hours",
+      "24/7 every day of the year",
+      "fastest emergency response"
+    ],
+    "primary_cta_ids": ["cta_emergency_response_discussion", "cta_schedule_facilities_discussion"]
+  },
+  {
+    "id": "pillar_vendor_documentation_compliance",
+    "name": "Vendor Documentation and Compliance",
+    "description": "The unsexy work that wins procurement — capability statements, reps & certs, W-9s, insurance, NAICS alignment.",
+    "target_avatars": ["federal_co", "state_local_pl", "prime_pm"],
+    "service_lanes": ["pest_control", "translation", "staffing", "janitorial", "emergency"],
+    "buyer_stage": "trust",
+    "sample_angles": [
+      "What a clean capability statement actually contains",
+      "Reps & certs hygiene — checking SAM.gov quarterly",
+      "Insurance posture for facility support contracts",
+      "Why NAICS alignment is the cheapest win in procurement"
+    ],
+    "proof_signals": [
+      "Capability statement template publicly available",
+      "SAM.gov UEI",
+      "Insurance posture stated",
+      "Reps & certs refresh cadence stated"
+    ],
+    "blocked_claims": [
+      "fully compliant with every federal regulation",
+      "HIPAA certified",
+      "SOC 2 certified"
+    ],
+    "primary_cta_ids": ["cta_download_capability_statement", "cta_documentation_review"]
+  },
+  {
+    "id": "pillar_veteran_owned_operational_discipline",
+    "name": "Veteran-Owned Operational Discipline",
+    "description": "ARCG's veteran-owned identity, framed as operational discipline — promises stated, kept, documented. Not a brand story, an operating posture.",
+    "target_avatars": ["federal_co", "state_local_pl", "prime_pm", "facilities_director"],
+    "service_lanes": ["pest_control", "translation", "staffing", "janitorial", "emergency"],
+    "buyer_stage": "awareness",
+    "sample_angles": [
+      "Operational discipline in a small business context",
+      "Why veteran-owned shows up in your reps & certs differently",
+      "What SDVOSB through SBA VetCert means for buyers",
+      "The boring version of veteran-owned: documentation, response, follow-through"
+    ],
+    "proof_signals": [
+      "SDVOSB certification reference",
+      "Stated response posture",
+      "Single POC, single accountable contact"
+    ],
+    "blocked_claims": [
+      "veteran-owned and award-winning",
+      "trusted by veteran agencies",
+      "elite veteran-led team"
+    ],
+    "primary_cta_ids": ["cta_request_capabilities_call", "cta_download_capability_statement"]
+  }
+]

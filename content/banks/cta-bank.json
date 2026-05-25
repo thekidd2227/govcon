@@ -1,0 +1,322 @@
+[
+  {
+    "id": "cta_request_capabilities_call",
+    "label": "Request capabilities call",
+    "cta_text": "Schedule a 15-minute capabilities call with ARCG Systems.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["federal_co", "prime_pm", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["linkedin", "facebook"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_download_capability_statement",
+    "label": "Download capability statement",
+    "cta_text": "Download our capability statement at arivergroup.com.",
+    "destination": "https://www.arivergroup.com/#capabilities",
+    "best_for_avatars": ["federal_co", "prime_pm", "state_local_pl"],
+    "buyer_stage": "trust",
+    "platform": ["linkedin", "facebook", "instagram"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_request_quote",
+    "label": "Request a quote",
+    "cta_text": "Request a quote for facility support, pest control, translation, staffing, or emergency response.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["linkedin", "facebook", "instagram"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_open_teaming_discussion",
+    "label": "Open teaming discussion",
+    "cta_text": "Open a teaming discussion with ARCG Systems on your upcoming capture.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["prime_pm"],
+    "buyer_stage": "action",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_micro_purchase_readiness",
+    "label": "Become micro-purchase vendor",
+    "cta_text": "Add ARCG Systems to your micro-purchase vendor list.",
+    "destination": "https://www.arivergroup.com/#vendor-info",
+    "best_for_avatars": ["federal_co"],
+    "buyer_stage": "action",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_schedule_facilities_discussion",
+    "label": "Schedule facilities discussion",
+    "cta_text": "Schedule a facilities support discussion with ARCG.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["linkedin", "facebook"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_pest_control_support",
+    "label": "Pest control support",
+    "cta_text": "Request a pest control walkthrough at your facility.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["facebook", "instagram", "linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_emergency_response_discussion",
+    "label": "Emergency response discussion",
+    "cta_text": "Add ARCG to your emergency response standby roster.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["linkedin", "facebook"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_documentation_review",
+    "label": "Documentation review",
+    "cta_text": "Request our reps & certs and insurance documentation package.",
+    "destination": "https://www.arivergroup.com/#vendor-info",
+    "best_for_avatars": ["federal_co", "prime_pm", "state_local_pl"],
+    "buyer_stage": "trust",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_request_cert_package",
+    "label": "Request cert package",
+    "cta_text": "Request the ARCG certification package — SDVOSB, MBE, SBE, DBE, HUBZone (where applicable).",
+    "destination": "https://www.arivergroup.com/#vendor-info",
+    "best_for_avatars": ["prime_pm", "federal_co", "state_local_pl"],
+    "buyer_stage": "trust",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_request_facilities_quote",
+    "label": "Request facilities quote",
+    "cta_text": "Request a facilities support quote — pest, janitorial, staffing, translation, emergency.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["facebook", "instagram", "linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_add_to_vendor_pool",
+    "label": "Add to vendor pool",
+    "cta_text": "Add ARCG Systems to your on-call vendor pool.",
+    "destination": "https://www.arivergroup.com/#vendor-info",
+    "best_for_avatars": ["state_local_pl", "facilities_director"],
+    "buyer_stage": "follow_up",
+    "platform": ["linkedin", "facebook"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_visit_website",
+    "label": "Visit website",
+    "cta_text": "Learn more about ARCG Systems at arivergroup.com.",
+    "destination": "https://www.arivergroup.com",
+    "best_for_avatars": ["federal_co", "state_local_pl", "prime_pm", "facilities_director"],
+    "buyer_stage": "awareness",
+    "platform": ["linkedin", "facebook", "instagram"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_follow_arcg",
+    "label": "Follow ARCG",
+    "cta_text": "Follow ARCG Systems for procurement-aware updates on SDVOSB facility support.",
+    "destination": "https://www.arivergroup.com",
+    "best_for_avatars": ["federal_co", "state_local_pl", "prime_pm", "facilities_director"],
+    "buyer_stage": "awareness",
+    "platform": ["linkedin", "facebook", "instagram"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_translation_inquiry",
+    "label": "Translation inquiry",
+    "cta_text": "Request ARCG translation and interpretation support for your program or facility.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["state_local_pl", "facilities_director"],
+    "buyer_stage": "action",
+    "platform": ["linkedin", "facebook"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_staffing_inquiry",
+    "label": "Staffing inquiry",
+    "cta_text": "Request ARCG operational staffing support for facility or event coverage.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["linkedin", "facebook"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_janitorial_inquiry",
+    "label": "Janitorial inquiry",
+    "cta_text": "Request ARCG janitorial and facility support service.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["linkedin", "facebook", "instagram"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_view_certifications",
+    "label": "View certifications",
+    "cta_text": "View ARCG's certifications at arivergroup.com.",
+    "destination": "https://www.arivergroup.com/#capabilities",
+    "best_for_avatars": ["federal_co", "state_local_pl", "prime_pm"],
+    "buyer_stage": "trust",
+    "platform": ["linkedin", "facebook"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_view_service_lanes",
+    "label": "View service lanes",
+    "cta_text": "Review ARCG's five service lanes at arivergroup.com.",
+    "destination": "https://www.arivergroup.com/#capabilities",
+    "best_for_avatars": ["federal_co", "state_local_pl", "facilities_director"],
+    "buyer_stage": "awareness",
+    "platform": ["linkedin", "facebook", "instagram"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_seasonal_walkthrough",
+    "label": "Seasonal walkthrough",
+    "cta_text": "Schedule a seasonal facility walkthrough before the next service cycle.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director"],
+    "buyer_stage": "follow_up",
+    "platform": ["facebook", "linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_subcontract_compliance",
+    "label": "Subcontract compliance support",
+    "cta_text": "Request ARCG's subcontracting plan compliance package for primes.",
+    "destination": "https://www.arivergroup.com/#vendor-info",
+    "best_for_avatars": ["prime_pm"],
+    "buyer_stage": "action",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_setaside_support",
+    "label": "Set-aside support",
+    "cta_text": "Talk to ARCG about set-aside utilization for your next acquisition.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["federal_co", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_capability_pdf",
+    "label": "Capability statement PDF",
+    "cta_text": "Get the ARCG capability statement PDF at arivergroup.com.",
+    "destination": "https://www.arivergroup.com/#capabilities",
+    "best_for_avatars": ["federal_co", "state_local_pl", "prime_pm", "facilities_director"],
+    "buyer_stage": "trust",
+    "platform": ["linkedin", "facebook"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_vendor_onboarding",
+    "label": "Vendor onboarding",
+    "cta_text": "Start ARCG's vendor onboarding for your agency or organization.",
+    "destination": "https://www.arivergroup.com/#vendor-info",
+    "best_for_avatars": ["state_local_pl", "facilities_director", "prime_pm"],
+    "buyer_stage": "trust",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_pest_quarterly",
+    "label": "Quarterly pest service",
+    "cta_text": "Set up a quarterly pest service plan at your facility.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "follow_up",
+    "platform": ["facebook", "instagram"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_post_event_cleanup",
+    "label": "Post-event cleanup",
+    "cta_text": "Request ARCG post-event janitorial standup at your facility.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["facebook", "instagram"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_capabilities_briefing",
+    "label": "Capabilities briefing",
+    "cta_text": "Request a 15-minute ARCG capabilities briefing for your team.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["federal_co", "prime_pm", "state_local_pl"],
+    "buyer_stage": "trust",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_naics_alignment",
+    "label": "NAICS alignment review",
+    "cta_text": "Confirm ARCG's NAICS / PSC alignment with your upcoming requirement.",
+    "destination": "https://www.arivergroup.com/#capabilities",
+    "best_for_avatars": ["federal_co", "prime_pm"],
+    "buyer_stage": "trust",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_emergency_standby",
+    "label": "Emergency standby roster",
+    "cta_text": "Add ARCG to your emergency standby roster before the next season.",
+    "destination": "https://www.arivergroup.com/#vendor-info",
+    "best_for_avatars": ["facilities_director", "state_local_pl"],
+    "buyer_stage": "follow_up",
+    "platform": ["linkedin", "facebook"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_translation_panel",
+    "label": "Translation panel",
+    "cta_text": "Add ARCG to your translation and interpretation panel.",
+    "destination": "https://www.arivergroup.com/#vendor-info",
+    "best_for_avatars": ["state_local_pl"],
+    "buyer_stage": "follow_up",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_rfq_response",
+    "label": "RFQ response",
+    "cta_text": "Send your RFQ to ARCG for a 24–72 hour response.",
+    "destination": "https://www.arivergroup.com/#contact",
+    "best_for_avatars": ["federal_co", "state_local_pl"],
+    "buyer_stage": "action",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  },
+  {
+    "id": "cta_share_with_sblo",
+    "label": "Share with your SBLO",
+    "cta_text": "Forward ARCG's cert package to your Small Business Liaison Officer.",
+    "destination": "https://www.arivergroup.com/#vendor-info",
+    "best_for_avatars": ["prime_pm"],
+    "buyer_stage": "follow_up",
+    "platform": ["linkedin"],
+    "risk_level": "low"
+  }
+]

@@ -1,0 +1,652 @@
+[
+  {
+    "id": "hook_001",
+    "pillar_id": "pillar_fast_compliant_response",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "A 72-hour response window isn't a marketing line — it's a procurement requirement.",
+    "tone": "procurement-aware",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_002",
+    "pillar_id": "pillar_fast_compliant_response",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Most CO calls aren't answered inside 72 hours. We treat that as the bar, not the goal.",
+    "tone": "direct",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_003",
+    "pillar_id": "pillar_fast_compliant_response",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "On-call vendors that don't answer the call aren't vendors. They're paperwork.",
+    "tone": "direct",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_004",
+    "pillar_id": "pillar_fast_compliant_response",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "Your capture deadline is Friday. Your sub still hasn't sent reps and certs. We send ours inside 24 hours.",
+    "tone": "procurement-aware",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_005",
+    "pillar_id": "pillar_fast_compliant_response",
+    "avatar": "facilities_director",
+    "platform": "facebook",
+    "hook": "When a pest sighting hits your front desk at 8 AM, the question is who picks up the phone.",
+    "tone": "direct",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_006",
+    "pillar_id": "pillar_fast_compliant_response",
+    "avatar": "facilities_director",
+    "platform": "instagram",
+    "hook": "Trucks staged. Crew briefed. Paperwork ready. That's a response posture.",
+    "tone": "trust-building",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_007",
+    "pillar_id": "pillar_certified_small_business_advantage",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "SDVOSB certified through SBA VetCert. That's the only veteran-owned status that counts at the procurement desk.",
+    "tone": "educational",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_008",
+    "pillar_id": "pillar_certified_small_business_advantage",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "The federal SDVOSB goal is 3%. Most agencies are still missing it. We're built for the actions that close that gap.",
+    "tone": "procurement-aware",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_009",
+    "pillar_id": "pillar_certified_small_business_advantage",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "MBE. SBE. DBE. SDVOSB. HUBZone (where applicable). One vendor identity. Five doors into your set-aside utilization.",
+    "tone": "procurement-aware",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_010",
+    "pillar_id": "pillar_certified_small_business_advantage",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "Your subcontracting plan goals don't fill themselves. We close the SDVOSB and MBE columns without pass-through risk.",
+    "tone": "direct",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_011",
+    "pillar_id": "pillar_certified_small_business_advantage",
+    "avatar": "state_local_pl",
+    "platform": "facebook",
+    "hook": "Set-aside utilization isn't a number on a quarterly report. It's whether the right vendor is in your pool today.",
+    "tone": "educational",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_012",
+    "pillar_id": "pillar_facility_readiness",
+    "avatar": "facilities_director",
+    "platform": "linkedin",
+    "hook": "Facility readiness is a posture, not a project. Here's the checklist we run on every onboarding.",
+    "tone": "educational",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_013",
+    "pillar_id": "pillar_facility_readiness",
+    "avatar": "facilities_director",
+    "platform": "facebook",
+    "hook": "Three things every facility needs before next quarter: pest plan, janitorial overflow, emergency standby.",
+    "tone": "diagnostic",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_014",
+    "pillar_id": "pillar_facility_readiness",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "Vendor backup posture is the cheapest insurance you'll buy this year.",
+    "tone": "direct",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_015",
+    "pillar_id": "pillar_facility_readiness",
+    "avatar": "facilities_director",
+    "platform": "instagram",
+    "hook": "ADA-aware. Eco-friendly. Occupant-safe. That's what a public facility service crew should look like.",
+    "tone": "trust-building",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_016",
+    "pillar_id": "pillar_facility_readiness",
+    "avatar": "facilities_director",
+    "platform": "facebook",
+    "hook": "Your primary vendor is great — until they're not available. Backup posture is what protects occupancy.",
+    "tone": "diagnostic",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_017",
+    "pillar_id": "pillar_pest_control_and_safety",
+    "avatar": "facilities_director",
+    "platform": "facebook",
+    "hook": "Integrated Pest Management 101: prevention first, treatment second, occupants safe at every step.",
+    "tone": "educational",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_018",
+    "pillar_id": "pillar_pest_control_and_safety",
+    "avatar": "facilities_director",
+    "platform": "instagram",
+    "hook": "Eco-friendly treatment in occupied space isn't a slogan. It's a workflow.",
+    "tone": "trust-building",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_019",
+    "pillar_id": "pillar_pest_control_and_safety",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "NAICS 561710 is our primary code. Pest control isn't a side lane for us — it's the lane.",
+    "tone": "procurement-aware",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_020",
+    "pillar_id": "pillar_pest_control_and_safety",
+    "avatar": "facilities_director",
+    "platform": "facebook",
+    "hook": "Quarterly pest service is cheaper than three reactive call-outs. Here's how we structure it.",
+    "tone": "diagnostic",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_021",
+    "pillar_id": "pillar_pest_control_and_safety",
+    "avatar": "facilities_director",
+    "platform": "instagram",
+    "hook": "IPM in a public building looks like this: inspection, evidence, plan, treatment, follow-up.",
+    "tone": "educational",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_022",
+    "pillar_id": "pillar_prime_subcontracting_support",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "A clean teaming package at proposal time looks like this: cert proof, insurance posture, defined scope, single POC.",
+    "tone": "educational",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_023",
+    "pillar_id": "pillar_prime_subcontracting_support",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "If your SDVOSB sub is a pass-through, your subcontracting plan is theater. We self-perform a defined scope.",
+    "tone": "direct",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_024",
+    "pillar_id": "pillar_prime_subcontracting_support",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "Your SBLO wants three things: current certs, signed teaming agreement, performance during execution. We bring all three.",
+    "tone": "procurement-aware",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_025",
+    "pillar_id": "pillar_prime_subcontracting_support",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "Capture week shouldn't be the first time you talk to your sub. Open the teaming discussion now.",
+    "tone": "direct",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_026",
+    "pillar_id": "pillar_micro_purchase_readiness",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Micro-purchase vendor readiness is a five-line checklist. Most vendors miss line two.",
+    "tone": "educational",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_027",
+    "pillar_id": "pillar_micro_purchase_readiness",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Your purchase card is the most flexible tool in your kit. Make sure your small business bench can keep up.",
+    "tone": "procurement-aware",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_028",
+    "pillar_id": "pillar_micro_purchase_readiness",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Under $10K: documented, certified, responsive. That's the only filter that matters.",
+    "tone": "direct",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_029",
+    "pillar_id": "pillar_micro_purchase_readiness",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Year-end is six weeks from now. Build the micro-purchase bench in week one, not week five.",
+    "tone": "urgent",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_030",
+    "pillar_id": "pillar_simplified_acquisition_support",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "SDVOSB sole-source under the Simplified Acquisition Threshold — the cleanest path to a $250K obligation.",
+    "tone": "procurement-aware",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_031",
+    "pillar_id": "pillar_simplified_acquisition_support",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "An RFQ response without a current capability statement is a wasted Tuesday. Ours is one click away.",
+    "tone": "direct",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_032",
+    "pillar_id": "pillar_simplified_acquisition_support",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "Under $250K is its own discipline. Different vendor profile, different documentation, different speed.",
+    "tone": "educational",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_033",
+    "pillar_id": "pillar_simplified_acquisition_support",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "Your SAT bench needs SDVOSB depth. We're in the SAM.gov record, certified, and ready to respond.",
+    "tone": "procurement-aware",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_034",
+    "pillar_id": "pillar_emergency_response",
+    "avatar": "facilities_director",
+    "platform": "facebook",
+    "hook": "Standby posture isn't a 24/7 promise. It's a documented mobilization window with a real POC.",
+    "tone": "trust-building",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_035",
+    "pillar_id": "pillar_emergency_response",
+    "avatar": "facilities_director",
+    "platform": "facebook",
+    "hook": "Storm season is the wrong week to find an emergency vendor. Add ARCG to the standby roster now.",
+    "tone": "urgent",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_036",
+    "pillar_id": "pillar_emergency_response",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "Post-event facility standup needs three lanes at once: janitorial, staffing, translation. One vendor can hold the line.",
+    "tone": "diagnostic",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_037",
+    "pillar_id": "pillar_emergency_response",
+    "avatar": "facilities_director",
+    "platform": "instagram",
+    "hook": "Crew. Trucks. PPE. Documentation. That's what a standby posture actually looks like.",
+    "tone": "trust-building",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_038",
+    "pillar_id": "pillar_emergency_response",
+    "avatar": "state_local_pl",
+    "platform": "facebook",
+    "hook": "Displacement events need a translator on day one. We bring that lane to the table.",
+    "tone": "diagnostic",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_039",
+    "pillar_id": "pillar_vendor_documentation_compliance",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "A capability statement is a single page with seven blocks. We'll show you the version we send to COs.",
+    "tone": "educational",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_040",
+    "pillar_id": "pillar_vendor_documentation_compliance",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Reps and certs hygiene: check SAM.gov quarterly, not annually. That alone keeps half your bench alive.",
+    "tone": "procurement-aware",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_041",
+    "pillar_id": "pillar_vendor_documentation_compliance",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "If your sub can't send insurance, W-9, and reps in 24 hours, your capture is already behind.",
+    "tone": "direct",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_042",
+    "pillar_id": "pillar_vendor_documentation_compliance",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "NAICS alignment is the cheapest win in procurement. We pair our codes to your requirement, not the other way around.",
+    "tone": "educational",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_043",
+    "pillar_id": "pillar_vendor_documentation_compliance",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Vendor documentation isn't a marketing exercise. It's the difference between a 30-minute award and a 30-day audit.",
+    "tone": "direct",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_044",
+    "pillar_id": "pillar_veteran_owned_operational_discipline",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Veteran-owned shows up in the reps and certs differently. SDVOSB through SBA VetCert is what your filter is looking for.",
+    "tone": "procurement-aware",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_045",
+    "pillar_id": "pillar_veteran_owned_operational_discipline",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "Operational discipline is the unsexy version of veteran-owned: promises stated, kept, documented.",
+    "tone": "direct",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_046",
+    "pillar_id": "pillar_veteran_owned_operational_discipline",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "We're not pitching veteran-owned as a brand story. We're operating it as a documentation standard.",
+    "tone": "direct",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_047",
+    "pillar_id": "pillar_veteran_owned_operational_discipline",
+    "avatar": "facilities_director",
+    "platform": "facebook",
+    "hook": "When we say we'll show up at 7 AM, we show up at 6:45 with the paperwork already signed.",
+    "tone": "trust-building",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_048",
+    "pillar_id": "pillar_veteran_owned_operational_discipline",
+    "avatar": "facilities_director",
+    "platform": "instagram",
+    "hook": "Veteran-owned doesn't have to be loud. It's just visible in the way the work gets done.",
+    "tone": "trust-building",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_049",
+    "pillar_id": "pillar_fast_compliant_response",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "24-hour cert package. 72-hour mobilization window. Stated in writing on the capability statement.",
+    "tone": "procurement-aware",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_050",
+    "pillar_id": "pillar_certified_small_business_advantage",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Five certifications, one vendor identity. Less paperwork on your side. More set-aside math on ours.",
+    "tone": "direct",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_051",
+    "pillar_id": "pillar_facility_readiness",
+    "avatar": "state_local_pl",
+    "platform": "facebook",
+    "hook": "An on-call vendor pool is only useful if the vendors actually answer. That's where most pools fall apart.",
+    "tone": "diagnostic",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_052",
+    "pillar_id": "pillar_pest_control_and_safety",
+    "avatar": "facilities_director",
+    "platform": "facebook",
+    "hook": "Pest sightings are reputational events, not just facility events. Treat them that way.",
+    "tone": "diagnostic",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_053",
+    "pillar_id": "pillar_prime_subcontracting_support",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "Your next IDIQ has a small business floor. We help you hit it without scrambling at proposal time.",
+    "tone": "procurement-aware",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_054",
+    "pillar_id": "pillar_micro_purchase_readiness",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Two-line micro-purchase rule: vendor is in SAM.gov, vendor answers the phone. Everything else is bonus.",
+    "tone": "direct",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_055",
+    "pillar_id": "pillar_simplified_acquisition_support",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "SAT actions don't need multi-volume RFPs. They need a vendor who can read the SOW and quote on Tuesday.",
+    "tone": "direct",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_056",
+    "pillar_id": "pillar_emergency_response",
+    "avatar": "facilities_director",
+    "platform": "instagram",
+    "hook": "Standby is a posture. Posture takes preparation. Preparation looks like this.",
+    "tone": "trust-building",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_057",
+    "pillar_id": "pillar_vendor_documentation_compliance",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "Vendor onboarding goes faster when the documentation lands clean. Here's what we send on day one.",
+    "tone": "educational",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_058",
+    "pillar_id": "pillar_veteran_owned_operational_discipline",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Discipline in this business looks small. It's a callback inside the hour. A capability statement that matches the NAICS. A cert that doesn't expire.",
+    "tone": "trust-building",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_059",
+    "pillar_id": "pillar_fast_compliant_response",
+    "avatar": "state_local_pl",
+    "platform": "facebook",
+    "hook": "Three days is the longest a procurement lead should wait for a callback. We treat it as the ceiling, not the goal.",
+    "tone": "direct",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_060",
+    "pillar_id": "pillar_certified_small_business_advantage",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "Set-aside compliance shouldn't be a fire drill in week eight. Open the teaming conversation in week one.",
+    "tone": "procurement-aware",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_061",
+    "pillar_id": "pillar_facility_readiness",
+    "avatar": "facilities_director",
+    "platform": "instagram",
+    "hook": "Five lanes, one vendor identity. That's a simpler call sheet on the day you need it.",
+    "tone": "trust-building",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_062",
+    "pillar_id": "pillar_pest_control_and_safety",
+    "avatar": "facilities_director",
+    "platform": "linkedin",
+    "hook": "Pest control isn't a one-time visit. It's a documented service plan. Here's how we structure the cadence.",
+    "tone": "educational",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_063",
+    "pillar_id": "pillar_prime_subcontracting_support",
+    "avatar": "prime_pm",
+    "platform": "linkedin",
+    "hook": "The right sub at the right time saves your subcontracting plan. The wrong one costs you the audit.",
+    "tone": "direct",
+    "buyer_stage": "action",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_064",
+    "pillar_id": "pillar_micro_purchase_readiness",
+    "avatar": "federal_co",
+    "platform": "linkedin",
+    "hook": "Micro-purchase is where small business goals actually get hit. Build the bench like it matters.",
+    "tone": "direct",
+    "buyer_stage": "awareness",
+    "risk_level": "low"
+  },
+  {
+    "id": "hook_065",
+    "pillar_id": "pillar_emergency_response",
+    "avatar": "state_local_pl",
+    "platform": "linkedin",
+    "hook": "Pre-positioned vendor agreements are quiet wins. Until the event happens. Then they're the only thing that matters.",
+    "tone": "diagnostic",
+    "buyer_stage": "trust",
+    "risk_level": "low"
+  }
+]

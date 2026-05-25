@@ -11,6 +11,31 @@ The Content Command Center generates, validates, exports, and schedules monthly 
 
 Buffer is the posting pipe. ARCG owns the content strategy and calendar.
 
+## GovCon Strategy Assets (Source of Truth)
+
+GovCon-specific strategy assets — used to plan, draft, and validate every ARCG Systems GovCon post — live in this repo:
+
+- `content/banks/content-pillars.json` — 10 GovCon content pillars (target avatars, service lanes, buyer stage, sample angles, proof signals, blocked claims, primary CTA ids)
+- `content/banks/hook-bank.json` — 60+ hooks indexed by pillar, avatar, platform, tone, buyer stage, risk level
+- `content/banks/cta-bank.json` — 30+ CTAs with destinations, best-fit avatars, buyer stage, platform, risk level
+- `content/govcon-30-day-posting-schedule.json` — 30 fully-drafted GovCon posts mapping pillar + hook + CTA per record
+- `content/govcon-90-day-calendar.json` — 90-day strategic calendar covering theme, week, lane, platform focus, avatar, content type, objective, CTA
+
+These assets are strategy and source-of-truth — **not live social posts**. Nothing in these files reaches a Buffer queue until:
+
+1. A human reviews the 30-day schedule against the manual review checklist in `docs/strategy/govcon-content-system.md`.
+2. `npm run content:validate` passes.
+3. `npm run buffer:dry-run` is reviewed against `logs/buffer-schedule-log.jsonl` and `exports/buffer-calendar.csv`.
+4. A human explicitly confirms live scheduling.
+
+Buffer remains **dry-run / manual-only** for GovCon content unless live scheduling is explicitly confirmed. No automated cron, no `workflow_dispatch`, no `--execute` runs without that confirmation.
+
+Companion strategy documents:
+
+- `docs/strategy/govcon-positioning.md` — positioning, certification language, no-go claims, headline options
+- `docs/strategy/govcon-customer-avatars.md` — Federal CO, State/Local Procurement Lead, Prime PM, Facilities Director
+- `docs/strategy/govcon-content-system.md` — rhythm, platform strategy, buyer-stage map, pillar-to-avatar mapping, manual review checklist
+
 ## Security Rules
 
 - Never commit `BUFFER_API_KEY`.
