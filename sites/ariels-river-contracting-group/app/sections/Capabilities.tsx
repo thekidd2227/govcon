@@ -15,11 +15,14 @@ export function Capabilities() {
         <p className="mt-4 text-arcg-steel max-w-[520px] text-[16px]">
           Five service lanes operated under a single execution discipline.
         </p>
-        <div className="mt-12 grid gap-px bg-arcg-navy/20 border border-arcg-navy/20 sm:grid-cols-2 lg:grid-cols-3">
-          {CAPABILITIES.map((cap) => (
+        <div className="mt-12 grid gap-px bg-arcg-navy/20 border border-arcg-navy/20 sm:grid-cols-2 lg:grid-cols-6">
+          {CAPABILITIES.map((cap, i) => (
             <article
               key={cap.id}
-              className="relative bg-arcg-ivory p-7 lg:p-8 flex flex-col gap-4"
+              className={`relative bg-arcg-ivory p-7 lg:p-8 flex flex-col gap-4 lg:col-span-2 ${
+                i >= 3 ? "lg:col-start-auto" : ""
+              }`}
+              style={i === 3 ? { gridColumnStart: 2 } : undefined}
             >
               {/* featured-card accent: full red top-rule */}
               {cap.featured && (
