@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { COMPANY } from "../data/company";
 import { CtaButton } from "./CtaButton";
 
 const NAV = [
@@ -13,15 +12,28 @@ const NAV = [
 
 export function NavBar() {
   return (
-    <header className="sticky top-0 z-40 bg-arcg-ivory/95 backdrop-blur border-b border-[var(--arcg-line)]">
+    <header className="sticky top-0 z-40 bg-arcg-ivory/95 backdrop-blur border-b border-arcg-navy/10">
+      {/* tri-tone accent strip — red / ivory / river-blue */}
+      <div className="h-[2px] flex" aria-hidden>
+        <span className="w-1/3 bg-arcg-red" />
+        <span className="w-1/3 bg-arcg-ivory" />
+        <span className="w-1/3 bg-arcg-river" />
+      </div>
       <div className="mx-auto max-w-[var(--container-content)] px-6 lg:px-10 flex items-center justify-between h-16">
-        <Link href="/" className="font-display text-[20px] font-medium tracking-[-0.015em] text-arcg-navy">
-          {COMPANY.shortName}
-          <span className="ml-2 font-mono text-[10px] tracking-[0.12em] uppercase text-arcg-ink-muted align-middle">
-            {COMPANY.acronym}
+        <Link
+          href="/"
+          className="group inline-flex items-center gap-3 text-arcg-navy"
+          aria-label="ARCG home"
+        >
+          <span className="font-display text-[24px] font-semibold tracking-[-0.02em] leading-none">
+            ARCG
+          </span>
+          <span className="hidden sm:inline-block w-px h-5 bg-arcg-navy/25" aria-hidden />
+          <span className="hidden sm:inline font-mono text-[10px] tracking-[0.18em] uppercase text-arcg-steel">
+            Contracting Group
           </span>
         </Link>
-        <nav className="hidden md:flex items-center gap-7 text-[14px] text-arcg-graphite">
+        <nav className="hidden md:flex items-center gap-7 text-[14px] text-arcg-navy/85">
           {NAV.slice(1, -1).map((item) => (
             <Link
               key={item.href}

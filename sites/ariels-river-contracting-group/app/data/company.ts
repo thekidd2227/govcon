@@ -1,6 +1,8 @@
 export const COMPANY = {
   legalName: "Ariel's River Contracting Group, LLC",
-  shortName: "Ariel's River",
+  // Display brand / DBA — used in nav, footer, social. The "Ariel's River" portion
+  // of the legal name is intentionally not surfaced as a display brand.
+  shortName: "ARCG",
   acronym: "ARCG",
   address: {
     street: "5601 Parker House Terrace, Suite 412",

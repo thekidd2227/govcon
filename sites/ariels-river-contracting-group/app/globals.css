@@ -9,8 +9,9 @@
   --color-arcg-gold: #C9A227;
   --color-arcg-red: #B4232A;
 
-  --color-arcg-ink: #2B2F33;
-  --color-arcg-ink-muted: #5A6068;
+  /* Ink palette is intentionally all-blue: no neutral graphite for body text. */
+  --color-arcg-ink: #0B1F33;
+  --color-arcg-ink-muted: #4A6478;
 
   --font-display: var(--font-fraunces), "GT Sectra", Georgia, serif;
   --font-sans: var(--font-inter), -apple-system, system-ui, sans-serif;
@@ -20,14 +21,16 @@
 }
 
 :root {
-  --arcg-line: rgba(11, 31, 51, 0.08);
-  --arcg-line-strong: rgba(11, 31, 51, 0.18);
+  --arcg-line: rgba(11, 31, 51, 0.10);
+  --arcg-line-strong: rgba(11, 31, 51, 0.22);
   --arcg-red-soft: rgba(180, 35, 42, 0.10);
+  --arcg-river-soft: rgba(31, 166, 201, 0.12);
 }
 
 html, body {
   background: var(--color-arcg-ivory);
-  color: var(--color-arcg-graphite);
+  /* All body type renders in deep navy, not black/graphite. */
+  color: var(--color-arcg-navy);
   font-family: var(--font-sans);
   font-size: 17px;
   line-height: 1.55;
@@ -43,23 +46,34 @@ html, body {
 .font-display { font-family: var(--font-display); }
 .font-mono { font-family: var(--font-mono); }
 
+/* Section eyebrow — red leading dash + river-blue trailing tick for the
+   "red-white-blue" rhythm without going patriotic. */
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-arcg-ink-muted);
+  color: var(--color-arcg-steel);
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 .eyebrow::before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 1px;
+  width: 28px;
+  height: 2px;
   background: var(--color-arcg-red);
+}
+.eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--color-arcg-river);
+  margin-left: 2px;
 }
 
 .section-title {
@@ -84,6 +98,34 @@ html, body {
   background: var(--color-arcg-gold);
   width: 64px;
 }
+.hairline-red {
+  height: 1px;
+  background: var(--color-arcg-red);
+  width: 40px;
+}
+.hairline-river {
+  height: 1px;
+  background: var(--color-arcg-river);
+  width: 40px;
+}
+
+/* Tri-tone marker — red / ivory / river-blue. Used as a subtle red-white-blue
+   rhythm cue at section starts without resorting to flag imagery. */
+.tri-tone {
+  display: inline-flex;
+  gap: 4px;
+}
+.tri-tone span {
+  display: block;
+  width: 16px;
+  height: 2px;
+}
+.tri-tone span:nth-child(1) { background: var(--color-arcg-red); }
+.tri-tone span:nth-child(2) {
+  background: var(--color-arcg-ivory);
+  box-shadow: 0 0 0 1px var(--arcg-line);
+}
+.tri-tone span:nth-child(3) { background: var(--color-arcg-river); }
 
 button:focus-visible, a:focus-visible {
   outline: 2px solid var(--color-arcg-river);
