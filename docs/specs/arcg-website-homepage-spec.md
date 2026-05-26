@@ -26,7 +26,7 @@ The spec below uses arivergroup.com verbatim with the mitigating footer line. Re
 
 - **Eyebrow:** SDVOSB · HUBZone · MBE · DBE · SBE · NMSDC MBE
 - **Headline:** Execution-Ready Support for Government and Commercial Facilities.
-- **Subhead:** Ariel's River Contracting Group, LLC is a Service-Disabled Veteran-Owned Small Business delivering pest control, language access, staffing, janitorial, and emergency support services with reliability, compliance, and scalable execution.
+- **Subhead:** Ariel's River Contracting Group, LLC is a Service-Disabled Veteran-Owned Small Business delivering pest control, language access, staffing, janitorial, emergency support, and ARCG Systems AI consulting and implementation services with reliability, compliance, and scalable execution.
 - **Primary CTA:** Request Capabilities Call →
 - **Secondary CTA:** View Capability Statement
 - **Trust microstrip:** UEI KPHJM83ZJLJ4 · CAGE 8FJ78 · DUNS 117331260

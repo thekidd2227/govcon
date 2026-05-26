@@ -13,7 +13,7 @@ export function Capabilities() {
           Structured Support Across Critical Facility and Program Needs.
         </h2>
         <p className="mt-4 text-arcg-steel max-w-[520px] text-[16px]">
-          Five service lanes operated under a single execution discipline.
+          Six service lanes operated under a single execution discipline.
         </p>
         <div className="mt-12 flex flex-col gap-4">
           <div className="grid gap-4 lg:grid-cols-3">
@@ -21,7 +21,7 @@ export function Capabilities() {
               <Card key={cap.id} cap={cap} />
             ))}
           </div>
-          <div className="grid gap-4 lg:grid-cols-2 lg:max-w-[66.667%] lg:mx-auto w-full">
+          <div className="grid gap-4 lg:grid-cols-3 w-full">
             {CAPABILITIES.slice(3).map((cap) => (
               <Card key={cap.id} cap={cap} />
             ))}

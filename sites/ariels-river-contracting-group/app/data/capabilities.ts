@@ -71,6 +71,19 @@ export const CAPABILITIES: Capability[] = [
       "Continuity-focused service delivery",
     ],
   },
+  {
+    id: "ai-consulting",
+    index: "06",
+    title: "AI Consulting & Implementation",
+    naics: "541611 / 541618",
+    bullets: [
+      "AI workflow consulting",
+      "Intake and automation planning",
+      "Operations process improvement",
+      "Implementation support for service teams",
+      "Reporting and decision-support systems",
+    ],
+  },
 ];
 
 export const DIFFERENTIATORS = [
