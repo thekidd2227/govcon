@@ -16,12 +16,12 @@ export function Capabilities() {
           Five service lanes operated under a single execution discipline.
         </p>
         <div className="mt-12 flex flex-col gap-4">
-          <div className="grid gap-px bg-arcg-navy/20 border border-arcg-navy/20 lg:grid-cols-3">
+          <div className="grid gap-4 lg:grid-cols-3">
             {CAPABILITIES.slice(0, 3).map((cap) => (
               <Card key={cap.id} cap={cap} />
             ))}
           </div>
-          <div className="grid gap-px bg-arcg-navy/20 border border-arcg-navy/20 lg:grid-cols-2 lg:max-w-[66.667%] lg:mx-auto w-full">
+          <div className="grid gap-4 lg:grid-cols-2 lg:max-w-[66.667%] lg:mx-auto w-full">
             {CAPABILITIES.slice(3).map((cap) => (
               <Card key={cap.id} cap={cap} />
             ))}
@@ -34,7 +34,7 @@ export function Capabilities() {
 
 function Card({ cap }: { cap: (typeof CAPABILITIES)[number] }) {
   return (
-    <article className="relative bg-arcg-ivory p-7 lg:p-8 flex flex-col gap-4">
+    <article className="relative bg-arcg-ivory border border-arcg-navy/20 p-7 lg:p-8 flex flex-col gap-4">
       {cap.featured && (
         <span aria-hidden className="absolute inset-x-0 top-0 h-[2px] bg-arcg-red" />
       )}
