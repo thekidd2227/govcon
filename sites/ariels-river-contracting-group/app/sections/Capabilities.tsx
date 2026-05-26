@@ -16,12 +16,12 @@ export function Capabilities() {
           Five service lanes operated under a single execution discipline.
         </p>
         <div className="mt-12 flex flex-col gap-4">
-          <div className="grid gap-px bg-arcg-navy/20 border border-arcg-navy/20 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-px bg-arcg-navy/20 border border-arcg-navy/20 lg:grid-cols-3">
             {CAPABILITIES.slice(0, 3).map((cap) => (
               <Card key={cap.id} cap={cap} />
             ))}
           </div>
-          <div className="grid gap-px bg-arcg-navy/20 border border-arcg-navy/20 sm:grid-cols-2 lg:grid-cols-2 lg:max-w-[66.667%] lg:mx-auto w-full">
+          <div className="grid gap-px bg-arcg-navy/20 border border-arcg-navy/20 lg:grid-cols-2 lg:max-w-[66.667%] lg:mx-auto w-full">
             {CAPABILITIES.slice(3).map((cap) => (
               <Card key={cap.id} cap={cap} />
             ))}
