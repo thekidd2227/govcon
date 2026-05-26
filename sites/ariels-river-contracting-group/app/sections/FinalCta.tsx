@@ -54,6 +54,7 @@ export function FinalCta() {
           <CtaButton href="/capability-statement.pdf" variant="inverted">
             Download Capability Statement
           </CtaButton>
+          {/* Public CTA labels intentionally use ARCG brand, not personal names. */}
           <CtaButton href={`mailto:${COMPANY.email}`} variant="inverted">
             Contact ARCG
           </CtaButton>

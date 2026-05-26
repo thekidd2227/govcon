@@ -115,7 +115,7 @@ Federal healthcare facility support. Reference available on request.
 - **Eyebrow:** 08 / Engage
 - **Title:** Built for Buyers Who Need Reliable Execution.
 - **Body:** ARCG supports government and commercial teams that need responsive service, compliance discipline, and dependable execution across facilities, language access, staffing, and emergency support requirements.
-- **CTAs:** Schedule Capabilities Call · Download Capability Statement · Contact Jean Max-Charles
+- **CTAs:** Schedule Capabilities Call · Download Capability Statement · Contact ARCG
 
 ### Footer
 
@@ -124,7 +124,7 @@ Ariel's River Contracting Group, LLC
 5601 Parker House Terrace, Suite 412, Hyattsville, MD 20782
 www.arivergroup.com · info@arivergroup.com · 347.285.5750
 
-Mr. Jean Max-Charles — President & Sales Director
+ARCG Systems — Contracting & Operations
 
 UEI KPHJM83ZJLJ4 · CAGE 8FJ78 · DUNS 117331260
 arivergroup.com is the registered web domain of Ariel's River Contracting Group, LLC.
@@ -340,7 +340,7 @@ export const COMPANY = {
   website: "www.arivergroup.com",
   email: "info@arivergroup.com",
   phone: "347.285.5750",
-  contact: { name: "Mr. Jean Max-Charles", title: "President & Sales Director" },
+  contact: { name: "ARCG Systems", title: "Contracting & Operations" },
   identifiers: { uei: "KPHJM83ZJLJ4", duns: "117331260", cage: "8FJ78" },
   certifications: ["SDVOSB","HUBZone","DBE","MBE","SBE","NMSDC MBE"],
 } as const;
