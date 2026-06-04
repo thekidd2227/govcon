@@ -175,11 +175,13 @@
     "pillar_id": "pillar_simplified_acquisition_support",
     "service_lane": "pest_control",
     "hook_id": "hook_030",
-    "post_copy": "SDVOSB sole-source under the Simplified Acquisition Threshold — the cleanest path to a $250K obligation.\n\nARCG is registered, SDVOSB-certified through SBA VetCert, and ready to support a sole-source justification on lanes inside our capability statement.",
+    "post_copy": "SDVOSB sole-source under simplified acquisition procedures — a clean pathway when scope and the current Simplified Acquisition Threshold align.\n\nARCG is registered, SDVOSB-certified through SBA VetCert, and ready to support a sole-source justification on lanes inside our capability statement. Verify the current SAT at FAR 2.101 before quoting any dollar value; agency rules and exceptions apply.",
     "cta_id": "cta_request_capabilities_call",
     "hashtags": ["#SimplifiedAcquisition", "#SDVOSB", "#GovCon", "#FederalContracting", "#PestControl", "#SBAVetCert"],
-    "review_status": "pending_review",
-    "notes": "Procurement-aware, SAT framing."
+    "review_status": "NEEDS_REVIEW_FACT_REPAIRED",
+    "fact_authority_used": ["FAR_SIMPLIFIED_ACQUISITION_THRESHOLD_GENERAL", "FAR_SMALL_BUSINESS_SET_ASIDE_ABOVE_MPT_TO_SAT"],
+    "source_checked_at": "2026-06-04",
+    "notes": "REPAIRED 2026-06-04: original post quoted '$250K obligation' as if it were the SAT. Replaced with neutral 'simplified acquisition procedures' framing and added verify-current-SAT caveat per FAR 2.101. Operator must re-run pre-publication fact checker and re-verify current SAT against primary source before scheduling."
   },
   {
     "day": 14,
@@ -273,11 +275,13 @@
     "pillar_id": "pillar_simplified_acquisition_support",
     "service_lane": "staffing",
     "hook_id": "hook_032",
-    "post_copy": "Under $250K is its own discipline. Different vendor profile, different documentation, different speed.\n\nARCG is built for it: under-$250K specialization, prime-managed delivery, sub-supported where licensing or geography requires.",
+    "post_copy": "Under-$250K work is its own discipline — an operator preference, not a legal claim. Different vendor profile, different documentation, different speed.\n\nARCG is built for it: under-$250K specialization, prime-managed delivery, sub-supported where licensing or geography requires. Verify the current Simplified Acquisition Threshold at FAR 2.101 before any external dollar-value statement.",
     "cta_id": "cta_request_quote",
     "hashtags": ["#SimplifiedAcquisition", "#StateLocal", "#Procurement", "#SDVOSB", "#StaffingServices", "#SmallBusiness"],
-    "review_status": "pending_review",
-    "notes": "Educational — under-$250K framing."
+    "review_status": "NEEDS_REVIEW_FACT_REPAIRED",
+    "fact_authority_used": ["FAR_SIMPLIFIED_ACQUISITION_THRESHOLD_GENERAL"],
+    "source_checked_at": "2026-06-04",
+    "notes": "REPAIRED 2026-06-04: original post framed '$250K' as if it were the legal SAT. Reframed as ARCG operator preference and added verify-current-SAT caveat per FAR 2.101."
   },
   {
     "day": 21,
@@ -357,11 +361,13 @@
     "pillar_id": "pillar_micro_purchase_readiness",
     "service_lane": "janitorial",
     "hook_id": "hook_029",
-    "post_copy": "Year-end is six weeks from now. Build the micro-purchase bench in week one, not week five.\n\nARCG is registered in SAM.gov, certified, multi-lane, and ready for under-$10K actions. Capability statement is one click away.",
+    "post_copy": "Year-end is six weeks from now. Build the micro-purchase bench in week one, not week five.\n\nARCG is registered in SAM.gov, certified, multi-lane, and ready for purchases at or below the general FAR micro-purchase threshold (currently $15,000; exceptions apply). Many micro-purchases are not publicly posted on SAM.gov — find vendors who are easy to validate and easy to buy from. Capability statement is one click away.",
     "cta_id": "cta_micro_purchase_readiness",
     "hashtags": ["#MicroPurchase", "#YearEnd", "#FederalContracting", "#GovCon", "#SDVOSB", "#Janitorial"],
-    "review_status": "pending_review",
-    "notes": "Urgent — year-end framing. Adjust month timing during review."
+    "review_status": "BLOCKED_FACT_CHECK_REPAIRED",
+    "fact_authority_used": ["FAR_MICRO_PURCHASE_THRESHOLD_GENERAL", "FAR_PUBLICIZING_NOT_ALWAYS_SAM"],
+    "source_checked_at": "2026-06-04",
+    "notes": "REPAIRED 2026-06-04: original post quoted outdated $10K MPT. Replaced with current $15,000 general MPT + exceptions disclaimer per FAR 2.101 (effective 2025-10-01). Added SAM.gov publicizing caveat per FAR Part 5. Operator must re-run pre-publication fact checker and re-verify FAR thresholds before scheduling. See docs/audits/govcon-content-accuracy-audit.md."
   },
   {
     "day": 27,

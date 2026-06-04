@@ -274,10 +274,11 @@
     "pillar_id": "pillar_micro_purchase_readiness",
     "avatar": "federal_co",
     "platform": "linkedin",
-    "hook": "Under $10K: documented, certified, responsive. That's the only filter that matters.",
+    "hook": "At or below the general FAR micro-purchase threshold (currently $15,000; exceptions apply): documented, certified, responsive. Those filters move first.",
     "tone": "direct",
     "buyer_stage": "action",
-    "risk_level": "low"
+    "risk_level": "low",
+    "fact_authority_required": ["FAR_MICRO_PURCHASE_THRESHOLD_GENERAL"]
   },
   {
     "id": "hook_029",
@@ -294,10 +295,11 @@
     "pillar_id": "pillar_simplified_acquisition_support",
     "avatar": "federal_co",
     "platform": "linkedin",
-    "hook": "SDVOSB sole-source under the Simplified Acquisition Threshold — the cleanest path to a $250K obligation.",
+    "hook": "SDVOSB sole-source under simplified acquisition procedures — a clean pathway when scope and the current Simplified Acquisition Threshold align (verify the current SAT at FAR 2.101 before quoting any dollar value).",
     "tone": "procurement-aware",
     "buyer_stage": "action",
-    "risk_level": "low"
+    "risk_level": "medium",
+    "fact_authority_required": ["FAR_SIMPLIFIED_ACQUISITION_THRESHOLD_GENERAL", "FAR_SMALL_BUSINESS_SET_ASIDE_ABOVE_MPT_TO_SAT"]
   },
   {
     "id": "hook_031",
@@ -314,10 +316,11 @@
     "pillar_id": "pillar_simplified_acquisition_support",
     "avatar": "state_local_pl",
     "platform": "linkedin",
-    "hook": "Under $250K is its own discipline. Different vendor profile, different documentation, different speed.",
+    "hook": "Under-$250K work is its own discipline — operator preference, not a legal claim. Different vendor profile, different documentation, different speed. Verify the current Simplified Acquisition Threshold at FAR 2.101 before any external dollar-value statement.",
     "tone": "educational",
     "buyer_stage": "awareness",
-    "risk_level": "low"
+    "risk_level": "medium",
+    "fact_authority_required": ["FAR_SIMPLIFIED_ACQUISITION_THRESHOLD_GENERAL"]
   },
   {
     "id": "hook_033",

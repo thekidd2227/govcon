@@ -34,7 +34,7 @@
     "buyer_stage": "awareness",
     "sample_angles": [
       "SDVOSB certified through SBA VetCert — what that means for procurement",
-      "Set-aside quotas: SDVOSB 3%, small business 23%, and how ARCG helps",
+      "Government-wide statutory small-business and SDVOSB procurement goals (verify current percentages with SBA before quoting) and how ARCG helps",
       "MBE / DBE / SBE — when each one matters at the state and local level",
       "How a multi-certified small business simplifies vendor compliance"
     ],
@@ -131,12 +131,13 @@
   {
     "id": "pillar_micro_purchase_readiness",
     "name": "Micro-Purchase Readiness",
-    "description": "Helping COs and purchase card holders use ARCG for under-$10K actions quickly and compliantly.",
+    "description": "Helping COs and purchase card holders use ARCG for purchases at or below the general FAR micro-purchase threshold (currently $15,000; exceptions apply). The general MPT was raised from $10,000 to $15,000 effective 2025-10-01 per FAR 2.101.",
     "target_avatars": ["federal_co"],
     "service_lanes": ["pest_control", "translation", "staffing", "janitorial", "emergency"],
     "buyer_stage": "action",
+    "fact_authority_required": ["FAR_MICRO_PURCHASE_THRESHOLD_GENERAL", "FAR_MICRO_PURCHASE_PREFERRED_PAYMENT_METHOD", "FAR_MICRO_PURCHASE_COMPETITION", "FAR_PUBLICIZING_NOT_ALWAYS_SAM"],
     "sample_angles": [
-      "Micro-purchase vendor readiness checklist",
+      "Micro-purchase vendor readiness checklist (general FAR MPT is currently $15,000; exceptions apply)",
       "Why your purchase card holder needs a documented small business bench",
       "How to add ARCG to your micro-purchase rotation",
       "Year-end micro-purchases and 72-hour mobilization"
@@ -145,33 +146,38 @@
       "SAM.gov UEI",
       "Single POC and phone",
       "Capability statement ready",
-      "Stated under-$10K response posture"
+      "Stated response posture at or below the general FAR micro-purchase threshold (currently $15,000; exceptions apply)"
     ],
     "blocked_claims": [
       "always lowest price",
       "guaranteed micro-purchase award",
-      "approved vendor of every federal agency"
+      "approved vendor of every federal agency",
+      "micro-purchase threshold is $10,000",
+      "under $10K",
+      "$10K micro-purchase",
+      "every micro-purchase is posted on SAM.gov",
+      "every micro-purchase is competed"
     ],
     "primary_cta_ids": ["cta_micro_purchase_readiness", "cta_download_capability_statement"]
   },
   {
     "id": "pillar_simplified_acquisition_support",
     "name": "Simplified Acquisition Support",
-    "description": "ARCG inside the Simplified Acquisition Threshold ($250K) — sole-source SDVOSB, set-aside, RFQ posture.",
+    "description": "ARCG specializes in under-$250K work as a stated operator preference. The legal Simplified Acquisition Threshold (SAT) value must be verified against FAR 2.101 before any public claim quotes a dollar value — sole-source SDVOSB, set-aside, and RFQ posture vary with the current SAT and exceptions.",
     "target_avatars": ["federal_co", "state_local_pl", "prime_pm"],
     "service_lanes": ["pest_control", "translation", "staffing", "janitorial", "emergency"],
     "buyer_stage": "action",
     "sample_angles": [
       "SDVOSB sole-source under the Simplified Acquisition Threshold",
       "What a clean RFQ response looks like",
-      "Why under-$250K is its own discipline",
+      "Why under-$250K work is its own discipline (operator preference; verify current SAT at FAR 2.101 before any public dollar-value claim)",
       "Set-aside compliance without overengineering"
     ],
     "proof_signals": [
       "SDVOSB certification reference",
       "Capability statement aligned to NAICS",
       "Reps & certs current",
-      "Stated under-$250K specialization"
+      "Stated under-$250K specialization (operator preference)"
     ],
     "blocked_claims": [
       "guaranteed award",
